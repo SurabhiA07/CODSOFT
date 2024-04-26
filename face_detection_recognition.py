@@ -23,7 +23,7 @@ def recognize_faces(image, faces):
 
 def process_image(image_path): #function to detect faces in image
     # Load the image
-    image = cv2.imread(r"C:\Users\Hitesh Awate\Desktop\seaoh\pictures\WhatsApp Images\IMG-20190903-WA0005.jpg")
+    image = cv2.imread(r"image_path")
     faces = detect_faces(image)
     # Recognize faces
     image_with_faces = recognize_faces(image, faces)
@@ -32,5 +32,5 @@ def process_image(image_path): #function to detect faces in image
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-image_path =(r"C:\Users\Hitesh Awate\Desktop\seaoh\pictures\WhatsApp Images\IMG-20190903-WA0005.jpg") #to Process the given image
+image_path =(r"image_path") #to Process the given image
 process_image(image_path)
